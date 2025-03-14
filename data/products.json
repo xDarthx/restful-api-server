@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop Pro",
+      "description": "Powerful laptop for professionals",
+      "price": 1299.99,
+      "category": "electronics"
+    },
+    {
+      "id": 2,
+      "name": "Smartphone X",
+      "description": "Latest smartphone with advanced features",
+      "price": 799.99,
+      "category": "electronics"
+    },
+    {
+      "id": 3,
+      "name": "Coffee Maker",
+      "description": "Automatic coffee maker with timer",
+      "price": 49.99,
+      "category": "home"
+    },
+    {
+      "id": 4,
+      "name": "gogogogo",
+      "price": "2000000",
+      "category": "home",
+      "description": "asjdjwa"
+    }
+  ]
+}
