@@ -1,11 +1,11 @@
-/* Reset all elements to have no margins, padding, and use border-box sizing */
+/* Reset all default browser styles for consistent rendering */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Base body styling - sets font, line spacing, text color, and background color */
+/* Base styling for the product catalog application */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
@@ -13,7 +13,7 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Container for content - centers content, sets width and adds padding */
+/* Main content wrapper - keeps content centered and responsive */
 .container {
     width: 90%;
     max-width: 1200px;
@@ -21,54 +21,54 @@ body {
     padding: 0 20px;
 }
 
-/* Header styling - dark background with white text */
+/* Site header for the product management system */
 header {
     background-color: #333;
     color: #fff;
     padding: 1rem 0;
 }
 
-/* Navigation bar - uses flexbox to space items */
+/* Navigation bar - contains site title and product menu links */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* Logo/site title in navigation */
+/* Application title in the header */
 nav h1 {
     font-size: 1.5rem;
 }
 
-/* Navigation menu list - removes bullets and uses flex layout */
+/* Navigation menu - horizontal layout for desktop view */
 nav ul {
     display: flex;
     list-style: none;
 }
 
-/* Individual menu items in navigation */
+/* Individual navigation items (Home, Products, Add Product) */
 nav ul li {
     margin-left: 1rem;
 }
 
-/* Navigation links styling */
+/* Navigation link styling for main menu */
 nav a {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem;
 }
 
-/* Hover effect for navigation links */
+/* Hover effect for better user feedback on interactive elements */
 nav a:hover {
     color: #ddd;
 }
 
-/* Main content area spacing */
+/* Main content area - contains product listings and forms */
 main {
     padding: 2rem 0;
 }
 
-/* Content sections - white background with subtle shadow */
+/* Content sections - used for product listings, forms, and detail views */
 section {
     background: #fff;
     padding: 1.5rem;
@@ -77,20 +77,20 @@ section {
     margin-bottom: 2rem;
 }
 
-/* Section headings */
+/* Section headings (Products, Add Product, Edit Product) */
 h2 {
     margin-bottom: 1.5rem;
     color: #333;
 }
 
-/* Products display - creates responsive grid layout */
+/* Product listing grid - responsive layout for the product catalog */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
 }
 
-/* Individual product card styling */
+/* Individual product card in the listing */
 .product-card {
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -98,25 +98,25 @@ h2 {
     transition: transform 0.3s ease;
 }
 
-/* Hover effect for product cards - slight lift and shadow */
+/* Interactive effect when hovering over product cards */
 .product-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Product title */
+/* Product title in the product card */
 .product-card h3 {
     margin-bottom: 0.5rem;
 }
 
-/* Price styling - bold with accent color */
+/* Product price - highlighted in red for emphasis */
 .price {
     font-weight: bold;
     color: #e63946;
     margin-bottom: 0.5rem;
 }
 
-/* Category tag styling */
+/* Product category tag - used for filtering in the UI */
 .category {
     background: #f1faee;
     display: inline-block;
@@ -131,7 +131,7 @@ h2 {
     margin-bottom: 1rem;
 }
 
-/* Base button styling */
+/* Base button style - used for product actions (View, Edit, Delete) */
 .btn {
     display: inline-block;
     background: #333;
@@ -146,33 +146,33 @@ h2 {
     font-family: inherit;
 }
 
-/* "View" button - blue variant */
+/* View product details button */
 .view-btn {
     background: #457b9d;
 }
 
-/* "Edit" button - green variant */
+/* Edit product button - routes to the product edit form */
 .edit-btn {
     background: #2a9d8f;
 }
 
-/* "Delete" button - red variant */
+/* Delete product button - triggers product removal from database */
 .delete-btn {
     background: #e63946;
 }
 
-/* Hover effect for all buttons */
+/* Hover effect for all action buttons */
 .btn:hover {
     opacity: 0.9;
 }
 
-/* Filter section styling - horizontal layout */
+/* Product filtering controls - search and category filter */
 .filters {
     display: flex;
     margin-bottom: 1.5rem;
 }
 
-/* Input and dropdown styling in filters */
+/* Input fields and dropdowns in the filter section */
 .filters input, .filters select {
     padding: 0.5rem;
     margin-right: 1rem;
@@ -180,18 +180,18 @@ h2 {
     border-radius: 3px;
 }
 
-/* Form field groups for consistent spacing */
+/* Form field group - used in Add/Edit product forms */
 .form-group {
     margin-bottom: 1.2rem;
 }
 
-/* Labels in forms */
+/* Form labels for product attributes (name, price, etc.) */
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
 }
 
-/* Form input styling - consistent across all input types */
+/* Form input styling for product data entry */
 .form-group input,
 .form-group select,
 .form-group textarea {
@@ -202,7 +202,7 @@ h2 {
     font-size: 1rem;
 }
 
-/* Footer styling - dark background with centered text */
+/* Site footer - contains copyright and site information */
 footer {
     background: #333;
     color: #fff;
