@@ -1,117 +1,138 @@
+/* Reset all elements to have no margins, padding, and use border-box sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+/* Base body styling - sets font, line spacing, text color, and background color */
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
-  }
-  
-  .container {
+}
+
+/* Container for content - centers content, sets width and adds padding */
+.container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-  }
-  
-  header {
+}
+
+/* Header styling - dark background with white text */
+header {
     background-color: #333;
     color: #fff;
     padding: 1rem 0;
-  }
-  
-  nav {
+}
+
+/* Navigation bar - uses flexbox to space items */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  nav h1 {
+}
+
+/* Logo/site title in navigation */
+nav h1 {
     font-size: 1.5rem;
-  }
-  
-  nav ul {
+}
+
+/* Navigation menu list - removes bullets and uses flex layout */
+nav ul {
     display: flex;
     list-style: none;
-  }
-  
-  nav ul li {
+}
+
+/* Individual menu items in navigation */
+nav ul li {
     margin-left: 1rem;
-  }
-  
-  nav a {
+}
+
+/* Navigation links styling */
+nav a {
     color: #fff;
     text-decoration: none;
     padding: 0.5rem;
-  }
-  
-  nav a:hover {
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
     color: #ddd;
-  }
-  
-  main {
+}
+
+/* Main content area spacing */
+main {
     padding: 2rem 0;
-  }
-  
-  section {
+}
+
+/* Content sections - white background with subtle shadow */
+section {
     background: #fff;
     padding: 1.5rem;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     margin-bottom: 2rem;
-  }
-  
-  h2 {
+}
+
+/* Section headings */
+h2 {
     margin-bottom: 1.5rem;
     color: #333;
-  }
-  
-  .products-grid {
+}
+
+/* Products display - creates responsive grid layout */
+.products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
-  }
-  
-  .product-card {
+}
+
+/* Individual product card styling */
+.product-card {
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 1rem;
     transition: transform 0.3s ease;
-  }
-  
-  .product-card:hover {
+}
+
+/* Hover effect for product cards - slight lift and shadow */
+.product-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  }
-  
-  .product-card h3 {
+}
+
+/* Product title */
+.product-card h3 {
     margin-bottom: 0.5rem;
-  }
-  
-  .price {
+}
+
+/* Price styling - bold with accent color */
+.price {
     font-weight: bold;
     color: #e63946;
     margin-bottom: 0.5rem;
-  }
-  
-  .category {
+}
+
+/* Category tag styling */
+.category {
     background: #f1faee;
     display: inline-block;
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
     margin-bottom: 0.5rem;
-  }
-  
-  .description {
+}
+
+/* Product description text */
+.description {
     color: #666;
     margin-bottom: 1rem;
-  }
-  
-  .btn {
+}
+
+/* Base button styling */
+.btn {
     display: inline-block;
     background: #333;
     color: #fff;
@@ -123,59 +144,69 @@
     text-decoration: none;
     font-size: 1rem;
     font-family: inherit;
-  }
-  
-  .view-btn {
+}
+
+/* "View" button - blue variant */
+.view-btn {
     background: #457b9d;
-  }
-  
-  .edit-btn {
+}
+
+/* "Edit" button - green variant */
+.edit-btn {
     background: #2a9d8f;
-  }
-  
-  .delete-btn {
+}
+
+/* "Delete" button - red variant */
+.delete-btn {
     background: #e63946;
-  }
-  
-  .btn:hover {
+}
+
+/* Hover effect for all buttons */
+.btn:hover {
     opacity: 0.9;
-  }
-  
-  .filters {
+}
+
+/* Filter section styling - horizontal layout */
+.filters {
     display: flex;
     margin-bottom: 1.5rem;
-  }
-  
-  .filters input, .filters select {
+}
+
+/* Input and dropdown styling in filters */
+.filters input, .filters select {
     padding: 0.5rem;
     margin-right: 1rem;
     border: 1px solid #ddd;
     border-radius: 3px;
-  }
-  
-  .form-group {
+}
+
+/* Form field groups for consistent spacing */
+.form-group {
     margin-bottom: 1.2rem;
-  }
-  
-  .form-group label {
+}
+
+/* Labels in forms */
+.form-group label {
     display: block;
     margin-bottom: 0.5rem;
-  }
-  
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
+}
+
+/* Form input styling - consistent across all input types */
+.form-group input,
+.form-group select,
+.form-group textarea {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #ddd;
     border-radius: 3px;
     font-size: 1rem;
-  }
-  
-  footer {
+}
+
+/* Footer styling - dark background with centered text */
+footer {
     background: #333;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;
-  }
+}
